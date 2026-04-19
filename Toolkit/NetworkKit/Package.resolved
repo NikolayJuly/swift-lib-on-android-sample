@@ -1,0 +1,33 @@
+{
+  "originHash" : "879d99e46c2ce76a02a7f33eb9857aab3738fdd216df380d52f37221cadeda52",
+  "pins" : [
+    {
+      "identity" : "swift-java",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NikolayJuly/swift-java.git",
+      "state" : {
+        "branch" : "minimal",
+        "revision" : "874d40f508b745d6b6b55d4c1bef0d205a4614f5"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "5073617dac96330a486245e4c0179cb0a6fd2256",
+        "version" : "1.12.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "4799286537280063c85a32f09884cfbca301b1a1",
+        "version" : "602.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

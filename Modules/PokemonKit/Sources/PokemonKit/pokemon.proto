@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package sample.pokemon.v1;
+
+option swift_prefix = "PB_";
+option java_package = "com.sample.pokemon.proto";
+option java_multiple_files = true;
+
+message Pokemon {
+  int32 id = 1;
+  string name = 2;
+  string sprite_url = 3;
+}
+
+message PokemonListState {
+  enum LoadState {
+    IDLE = 0;
+    LOADING = 1;
+    LOADED = 2;
+    FAILED = 3;
+  }
+  repeated Pokemon pokemons = 1;
+  int64 last_refresh_epoch_ms = 2;
+  LoadState load_state = 3;
+  // Pre-formatted, user-facing label like "Last refresh: Apr 23, 14:32". Formed in the
+  // shared VM so the UI (iOS/Android) just renders it — no duplicated locale logic.
+  string last_refresh_label = 4;
+}
